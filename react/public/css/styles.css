@@ -1,0 +1,71 @@
+/* styles.css */
+
+/* Body background */
+body {
+    background-image: url('../images/background.jpeg');
+    background-size: contain;
+    background-position: center;
+    /* Additional styles */
+    color: #ffffff; /* White text color */
+    font-family: Arial, sans-serif; /* Example font */
+    margin: 0; /* Reset margin to ensure no default browser padding */
+    padding: 0; /* Reset padding to ensure no default browser padding */
+}
+
+/* Centered text */
+.centered-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* Header styles */
+.header {
+    font-size: 20px; /* Adjust size as needed */
+    text-decoration-color: #ffffff; /* White text color */
+}
+
+/* Top navigation styles */
+.top-nav {
+    padding: 0px 0; /* Padding around the top nav */
+    text-align: center; /* Center align items in top nav */
+}
+
+
+.top-nav ul li {
+    display: inline;
+    margin-right: 20px; /* Adjust spacing between nav items */
+}
+
+.top-nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* White text color */
+    font-size: 16px; /* Adjust font size for*/
+}
+
+/* styles.css */
+
+/* Main section styles */
+.main {
+    
+    padding: 20px; /* Adjust padding as needed */
+}
+
+/* Banner row styles */
+.banner-row {
+    margin-bottom: 20px; /* Space below the banner */
+}
+
+/* Banner image styles */
+.banner-img {
+    width: 100%; /* Ensure the image takes full width */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+/* Centered text */
+.section h2 {
+    text-align: center;
+    text-transform: capitalize; /* Capitalize text */
+    margin-bottom: 20px; /* Space below the heading */
+}
+

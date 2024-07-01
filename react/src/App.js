@@ -15,6 +15,7 @@ import Mugs from './components/Mugs'
 import Pants from './components/Pants'
 import Shirts from './components/Shirts'
 import Stickers from './components/Stickers'
+import Login from './components/Login'
 
 const App = () => {
 
@@ -34,7 +35,6 @@ const App = () => {
         firstName: '',
         lastName: '',
         email: '',
-        phone: '',
         password: ''
     })
 
@@ -120,6 +120,7 @@ const App = () => {
                             <Route path='/products/:id' element={<ProductSingle />} />
                             <Route path='/cartItems' element={<CartItems />} />
                             <Route path='/orderedItems' element={<OrderedItems />} />
+                            <Route path='/Login' element={<Login />} />
                             <Route path="*" element={<Error404 />} />
                         </Routes>
                     </div>

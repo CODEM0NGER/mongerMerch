@@ -1,3 +1,4 @@
+import react from 'react'
 import { Link } from "react-router-dom"; // Link component for navigation
 import { BsCart } from 'react-icons/bs'; // Cart icon from react-icons
 
@@ -9,15 +10,15 @@ const Header = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-5">
-                        <h1 className="branding text-capitalize text-center text-md-start">
-                            <Link to="/" style={{ textDecoration: 'none' }}>
-                                <img src={logo} style={{ width: '32px' }} alt="Store Logo" />
-                                GAMEM0NGER Merch Store
-                                <span className="small fs-6">
-                                    (MAKE LIFE, PLAY GAMES....)
-                                </span>
-                            </Link>
-                        </h1>
+                    <h1 className="branding text-capitalize text-center text-md-start">
+                        <Link to="/" style={{ textDecoration: 'none', color: '#ffffff', fontSize: '20px' }}>
+                            <img src={logo} style={{ width: '32px' }} alt="Store Logo" />
+                            GAMEM0NGER Merch Store
+                            <span className="small fs-6">
+                                (MAKE LIFE, PLAY GAMES....)
+                            </span>
+                        </Link>
+                    </h1>
                     </div>
                     <div className="col-md-4">
                         <nav className="top-nav">
@@ -53,15 +54,28 @@ const Header = () => {
                                     >Stickers</Link>
                                 </li>
                                 <li className="nav-item me-2">
+                                    <Link
+                                        to="/CartItems">
                                     <BsCart />
+                                    </Link>
                                 </li>
                             </ul>
                         </nav>
                     </div>
-                        <div className="col-md-3">
-                            <p className="text-end signin">Already a Monger? Sign In!</p> 
-                            <Link to='/createAccount'>Join the Monger Family!</Link>
-                    </div>
+                    <div className="col-md-3">
+    <Link to='/Login'
+        className="text-end signin"
+        style={{
+            textDecoration: 'none',
+            color: '#ffffff', // White text color
+            fontSize: '14px', // Adjust font size as needed
+            marginRight: '20px',
+            textTransform: 'capitalize'
+        }}
+    >
+        Join the Monger family or Sign In!
+    </Link>
+</div>
                 </div>
             </div>
         </header>

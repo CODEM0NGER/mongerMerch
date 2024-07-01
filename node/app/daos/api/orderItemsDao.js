@@ -1,8 +1,9 @@
-const con = require('../../config/dbconfig');
+const con = require('../../config/dbconfig'); //import database config//
 
 const orderItemsDao = {
     table: 'OrderItems',
 
+    //Method to find all ordered items//
     findAllByOrderId: function (req, res) {
         const orderId = req.params.orderId;
         con.execute(
@@ -23,5 +24,5 @@ const orderItemsDao = {
         );
     }
 };
-
+//Execute the SQL query to find all cart items by ID and if there is no error ior if one row is returned respond with that single row otherwise respond with all rows//
 module.exports = orderItemsDao;

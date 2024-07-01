@@ -41,7 +41,7 @@ const Shirts = () => {
     return (
         <main className="main" id="main">
             <div className="container">
-                <h2 className="text-capitalize text-center">mugs</h2>
+                <h2 className="text-capitalize text-center">shirts</h2>
                 <div className="row row-cols-1 row-cols-md-3">
                     {cards}
                 </div>

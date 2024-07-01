@@ -1,14 +1,11 @@
+import React from 'react';
 
-
-
-const CreateAccount =({ formData, handleChange, handleSubmit })=> {
-
-
+const CreateAccount = ({ formData, handleChange, handleSubmit }) => {
     return (
         <main className="main" id="createAcctMain">
             <div className="container">
-                <h2 className="text-capitalize text-danger">create an account</h2>
-                <form className="create-accounnt" onSubmit={handleSubmit}>
+                <h2 className="text-capitalize text-danger">Create an Account</h2>
+                <form className="create-account" onSubmit={handleSubmit}>
                     <div className="form-floating mb-3">
                         <input 
                             type="text"
@@ -19,7 +16,7 @@ const CreateAccount =({ formData, handleChange, handleSubmit })=> {
                             onChange={handleChange}
                             required
                         />
-                        <label htmlFor="firstName">First</label>
+                        <label htmlFor="firstName">First Name</label>
                     </div>
                     <div className="form-floating mb-3">
                         <input 
@@ -31,7 +28,7 @@ const CreateAccount =({ formData, handleChange, handleSubmit })=> {
                             onChange={handleChange}
                             required
                         />
-                        <label htmlFor="lastName">Last</label>
+                        <label htmlFor="lastName">Last Name</label>
                     </div>
                     <div className="form-floating mb-3">
                         <input 
@@ -47,18 +44,6 @@ const CreateAccount =({ formData, handleChange, handleSubmit })=> {
                     </div>
                     <div className="form-floating mb-3">
                         <input 
-                            type="tel"
-                            className="form-control"
-                            id="phone"
-                            name="phone"
-                            value={formData.phone}
-                            onChange={handleChange}
-                            required
-                        />
-                        <label htmlFor="phone">Phone</label>
-                    </div>
-                    <div className="form-floating mb-3">
-                        <input 
                             type="password"
                             className="form-control"
                             id="password"
@@ -70,12 +55,12 @@ const CreateAccount =({ formData, handleChange, handleSubmit })=> {
                         <label htmlFor="password">Password: (Must contain at least 1 uppercase letter, 1 lowercase letter, 1 number, 1 special character, & 8 characters) </label>
                     </div>
                     <div className="mb-3 button-div">
-                        <button className="btn btn-danger">Submit</button>
+                        <button type="submit" className="btn btn-danger">Submit</button>
                     </div>
                 </form>
             </div>
         </main>
-    )
+    );
 }
 
-export default CreateAccount
+export default CreateAccount;

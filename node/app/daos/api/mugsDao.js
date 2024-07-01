@@ -3,6 +3,7 @@ const con = require('../../config/dbconfig');
 const mugsDao = {
     table: 'Mugs',
 
+    //method to find all mugs//
     findAll: function (req, res) {
         con.execute(
             `SELECT * FROM ${this.table}`,

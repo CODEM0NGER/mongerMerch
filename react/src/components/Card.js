@@ -9,7 +9,7 @@ const Card =(props)=> {
                 <div className="card-top">
                     <h3 className="card-title">{props.name}</h3>
                     <p className="card-text">{props.price}</p>
-                    <Link to={`/${props.path}/${props.id}`}>View Product</Link>
+                    <Link to={`/${props.path}/${props.id}`} className="btn btn-primary" >View Product</Link>
                 </div>
             </div>
         </div>

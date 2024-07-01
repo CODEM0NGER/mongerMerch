@@ -1,11 +1,11 @@
-const con = require('../../config/dbconfig');
+const con = require('../../config/dbconfig'); //import database config//
 
 const usersDao = {
     table: 'Users',
 
     findAll: function (req, res) {
         con.execute(
-            `SELECT * FROM ${this.table}`,
+            `SELECT * FROM ${this.table} ORDER BY lastName, firstName;`,
             (error, rows) => {
                 if (!error) {
                     if (rows.length === 1) {
@@ -22,4 +22,5 @@ const usersDao = {
     }
 };
 
+//Execute the SQL query to find all cart items by ID and if there is no error ior if one row is returned respond with that single row otherwise respond with all rows//
 module.exports = usersDao;

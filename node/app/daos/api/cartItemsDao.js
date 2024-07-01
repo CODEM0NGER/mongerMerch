@@ -26,7 +26,6 @@ const cartItemsDao = {
     }
 };
 
-//Execute the SQL query to find all cart items by ID and if there is no error ior if one row is returned respond with that single row otherwise respond with all rows
+//Execute the SQL query to find all cart items by ID and if there is no error ior if one row is returned respond with that single row otherwise respond with all rows//
 module.exports = cartItemsDao;
 
-//

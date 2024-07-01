@@ -1,7 +1,8 @@
-const daoCommon = require('./common/daoCommon');
+const daoCommon = require('./common/daoCommon'); //import the common DAO methods
 
+// Combine common DAO methods with specific DAO methods for each DAO
 const cartItemsDao = {
-    ...daoCommon, ...require('./api/cartItemsDao')
+    ...daoCommon, ...require('./api/cartItemsDao') //spread operator to include common methods and to include specific methods 
 };
 
 const hatsDao = {
@@ -52,3 +53,4 @@ module.exports = {
     stickersDao,
     usersDao
 };
+//export of all DAO objects for use in the app//
