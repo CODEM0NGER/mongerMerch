@@ -63,19 +63,11 @@ const Header = () => {
                         </nav>
                     </div>
                     <div className="col-md-3">
-    <Link to='/Login'
-        className="text-end signin"
-        style={{
-            textDecoration: 'none',
-            color: '#ffffff', // White text color
-            fontSize: '14px', // Adjust font size as needed
-            marginRight: '20px',
-            textTransform: 'capitalize'
-        }}
-    >
-        Join the Monger family or Sign In!
-    </Link>
-</div>
+                        <Link to='/Login'
+                            className="text-end signin"
+                            style={{ textDecoration: 'none', color: '#ffffff', fontSize: '14px', marginRight: '20px', textTransform: 'capitalize' }}
+                        >Join the Monger family or Sign In!</Link>
+                    </div>
                 </div>
             </div>
         </header>

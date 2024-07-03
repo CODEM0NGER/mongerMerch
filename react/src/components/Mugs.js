@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Card from './Card';
 const Mugs = () => {
-    // Initialize state for products and featured product
+    // Initialize state for mugs
     const [mugs, setMugs] = useState([]);
     
     // Fetch products from the API

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const Home = () => {
-    // Initialize state for products and featured product
+    // Initialize state for products
     const [products, setProducts] = useState([]);
 
     // Fetch products from the API

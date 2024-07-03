@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-
+//Herbert helped me with this and provided the template for the for let function//
 const Card =(props)=> {
 
     return (

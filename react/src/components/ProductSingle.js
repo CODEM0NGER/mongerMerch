@@ -35,7 +35,7 @@ const ProductSingle = () => {
                             name={product.name}
                             imgUrl={`${product.image_url}`}
                             price={product.price}
-                            path={'Single Product'}
+                            path={'SingleProduct'}
                         />
                     </div>
                     <div className="col-md-6">

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import axios from 'axios'
-
+    //Imports: if its not here where can it go?
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Home from "./components/Home"

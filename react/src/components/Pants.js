@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Card from './Card';
 const Pants = () => {
-    // Initialize state for products and featured product
+    // Initialize state for pants
     const [pants, setPants] = useState([]);
     
-    // Fetch products from the API
+    // Fetch pants from the API
     useEffect(()=> {
 
         axios.get('http://localhost:9000/api/products').then(res => {

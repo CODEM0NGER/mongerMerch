@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-
+//initalize 
 const CartItems = () => {
     const [cartItems, setCartItems] = useState([]);
 
