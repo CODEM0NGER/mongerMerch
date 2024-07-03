@@ -2,14 +2,13 @@
 
 /* Body background */
 body {
-    background-image: url('../images/background.jpeg');
+    background-image: url('../images/background2.jpeg');
     background-size: contain;
     background-position: center;
-    /* Additional styles */
-    color: #ffffff; /* White text color */
-    font-family: Arial, sans-serif; /* Example font */
-    margin: 0; /* Reset margin to ensure no default browser padding */
-    padding: 0; /* Reset padding to ensure no default browser padding */
+    color: #ffffff; 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
 }
 
 /* Centered text */
@@ -21,51 +20,48 @@ body {
 
 /* Header styles */
 .header {
-    font-size: 20px; /* Adjust size as needed */
-    text-decoration-color: #ffffff; /* White text color */
+    font-size: 20px; 
+    text-decoration-color: #ffffff; 
 }
 
 /* Top navigation styles */
 .top-nav {
-    padding: 0px 0; /* Padding around the top nav */
-    text-align: center; /* Center align items in top nav */
+    padding: 0px 0; 
+    text-align: center; 
 }
 
 
 .top-nav ul li {
     display: inline;
-    margin-right: 20px; /* Adjust spacing between nav items */
+    margin-right: 20px; 
 }
 
 .top-nav ul li a {
     text-decoration: none;
-    color: #ffffff; /* White text color */
-    font-size: 16px; /* Adjust font size for*/
+    color: #ffffff; 
+    font-size: 16px; 
 }
 
-/* styles.css */
-
-/* Main section styles */
 .main {
     
-    padding: 20px; /* Adjust padding as needed */
+    padding: 20px; 
 }
 
 /* Banner row styles */
 .banner-row {
-    margin-bottom: 20px; /* Space below the banner */
+    margin-bottom: 20px; 
 }
 
 /* Banner image styles */
 .banner-img {
-    width: 100%; /* Ensure the image takes full width */
-    border-radius: 8px; /* Rounded corners for the image */
+    width: 100%; 
+    border-radius: 8px; 
 }
 
 /* Centered text */
 .section h2 {
     text-align: center;
-    text-transform: capitalize; /* Capitalize text */
-    margin-bottom: 20px; /* Space below the heading */
+    text-transform: capitalize; 
+    margin-bottom: 20px; 
 }
 

@@ -33,7 +33,7 @@ const ProductSingle = () => {
                         <Card
                             id={product.product_id}
                             name={product.name}
-                            imgUrl={`/images/images/${product.image_url}`}
+                            imgUrl={`${product.image_url}`}
                             price={product.price}
                             path={'Single Product'}
                         />
